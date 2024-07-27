@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .header {
+                background-color: #3c3434;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="text-center" style="background-color: #3c3434">
+            <!-- Background image -->
+            <div class="p-5 bg-image" style="
+                 background-color: #3c3434;
+                 height: 300px;
+                 ">
+                <img
+                    src="https://firebasestorage.googleapis.com/v0/b/administracion-de-bd-1eabb.appspot.com/o/logo-computer%20(3).png?alt=media&token=1f1d8ff3-adf9-48d4-a222-790541726f26"
+                    height="16"
+                    alt="MDB Logo"
+                    loading="lazy"
+                    style="margin-top: -1px; height: 120px; width: 120px"
+                    />
+            </div>
+
+
+            <div class="card mx-4 mx-md-5 shadow-5-strong bg-body-tertiary" style="
+                 margin-top: -100px;
+                 backdrop-filter: blur(30px);
+                 ">
+                <div class="card-body py-5 px-md-5">
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="fw-bold mb-5">Regístrate</h2>
+                            <form action="/registrar" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div data-mdb-input-init class="form-outline">
+                                            <input type="text" id="form3Example1" name="nombre" class="form-control" placeholder="Juan"/>
+                                            <label class="form-label" for="form3Example1">Nombre</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div data-mdb-input-init class="form-outline">
+                                            <input type="text" id="form3Example2" name="apellido" class="form-control" placeholder="Ramírez" />
+                                            <label class="form-label" for="form3Example2">Apellido</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Email input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="email" id="form3Example3" name="email" class="form-control" placeholder="Juanramirez@gmail.com" />
+                                    <label class="form-label" for="form3Example3">Email</label>
+                                </div>
+
+                                <!-- Password input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="password" id="form3Example4" name="contrasena" class="form-control" placeholder="**************"/>
+                                    <label class="form-label" for="form3Example4">Contraseña</label>
+                                </div>
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary me-3" style="background-color: #c24434; border-color: #c24434">
+                                    Registrarse
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
